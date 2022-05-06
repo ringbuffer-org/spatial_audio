@@ -10,6 +10,24 @@
 .. has_math: true
 
 
+The Virtual Source
+==================
+
+The following example encodes a single monophonic audio signal
+to an Ambisonics source with two parameters:
+
+- Azimuth: the horizontal angle of incidence.
+- Elevation: the vertical angle of incidence.
+
+Both angles are expressed in rad and range from :math:`-\pi` to :math:`\pi`.
+Figure 1 shows a virtual sound source with these two parameters.
+
+.. figure:: /images/spatial/single-source.png
+  :width: 40%
+  :figwidth: 100%
+  :align: center
+
+  Figure 1: Virtual sound source with two angles (azimuth and elevation).
 
 
 Encoding a 1st Order Source
@@ -32,10 +50,39 @@ First thing to create is an audio rate bus for the encoded Ambisonics signal. Th
 
 -----
 
-The channels of this bus correspond to the spherical harmonics. They encode the overall pressure and the distribution along the three basic dimensions:
+The channels of this bus correspond to the spherical harmonics.
+They encode the overall pressure and the distribution along the three basic dimensions.
+In the SC-HOA tools, Ambisonics channels are ordered according to the ACN convention
+and normalized with the N3D standard (Grond, 2017).
+The channels in the bus thus hold the three main axes in the following order:
+
+
+
+.. list-table:: Ambisonics channel ordering in the SC-HOA tools (ACN).
+  :widths: 25 25 50
+  :header-rows: 1
+  :align: center
+
+  * - Spherical Harmonic Index
+    - Channel
+    - Description
+  * - 1
+    - W
+    - omnidirectional
+  * - 2
+    - X
+    - left-right
+  * - 3
+    - Z
+    - top-bottom
+  * - 4
+    - Y
+    - front-rear
+
 
 
 ------
+
 
 The Encoder
 -----------
@@ -43,12 +90,13 @@ The Encoder
 The SC-HOA library includes different encoders. This example uses the ``HOASphericalHarmonics`` class.
 This simple encoder can set the angles of incidence (azimuth, elevation) in spherical coordinates. Angles are controlled in radians:
 
-- azimuth=0 with elevation=0 is a signal straight ahead
-- azimuth=-pi/2 is hard left
-- azimuth=pi/2 is hard right
-- azimuth=pi is in the back.
-- elevation=pi/2 is on the top
-- elevation=-pi/2 is on the bottom
+- azimuth = 0 with elevation=0 is a signal straight ahead
+- azimuth =-pi/2 is hard left
+- azimuth = pi/2 is hard right
+- azimuth = pi is in the back.
+
+- elevation = pi/2 is on the top
+- elevation = -pi/2 is on the bottom
 
 This example  uses a sawtooth signal as mono input and calculates the four Ambisonics channels.
 
@@ -149,3 +197,12 @@ Exercises
 .. admonition:: Exercise IV
 
   Use OSC messages to control the positions of multiple sources.
+
+
+------
+
+References
+==========
+
+.. publication_list:: ../Spatial_Audio/bibtex/ambisonics-supercollider.bib
+	   :style: unsrt

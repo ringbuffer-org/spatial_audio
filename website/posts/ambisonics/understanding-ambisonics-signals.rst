@@ -61,30 +61,7 @@ Figure 2 shows a first order B Format signal.
 
 
 There are different conventions for the sequence of the individual signals,
-as well as for the normalization. The format used in the following tutorials
-is as follows:
-
-.. list-table:: Channel ordering in the Ambisonics examples.
- :widths: 25 25 50
- :header-rows: 1
- :align: center
-
- * - Index
-   - Channel
-   - Description
- * - 1
-   - W
-   - omnidirectional
- * - 2
-   - X
-   - left-right
- * - 3
-   - Y
-   - front-rear
- * - 4
-   - Y
-   - top-bottom
-
+as well as for the normalization. 
 
 -----
 
