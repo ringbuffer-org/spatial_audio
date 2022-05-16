@@ -8,6 +8,6 @@
 .. type: text
 .. priority: 4
 .. has_math: true
-.. author: psch
+.. author: Paul Schuladen
 
 Feed the IEM-Binaural Decoder with an Ambisonics signal and set the output right.
