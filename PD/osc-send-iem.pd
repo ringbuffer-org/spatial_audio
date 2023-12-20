@@ -1,0 +1,15 @@
+#N canvas 791 331 514 513 10;
+#X obj 19 143 list trim;
+#X obj 19 116 list prepend send;
+#X floatatom 19 51 5 0 0 0 - - -;
+#X msg 96 180 disconnect;
+#X obj 19 209 netsend -u -b;
+#X msg 96 156 connect localhost 9999;
+#X obj 19 84 oscformat StereoEncoder azimuth;
+#X text 15 24 Set azimuth value (-180...+180):;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 6 0;
+#X connect 3 0 4 0;
+#X connect 5 0 4 0;
+#X connect 6 0 1 0;
