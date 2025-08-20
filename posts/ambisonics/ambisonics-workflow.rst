@@ -6,7 +6,7 @@
 .. link:
 .. description:
 .. type: text
-.. priority: 2
+.. priority: 1
 .. has_math: true
 
 Basic Workflow
@@ -21,7 +21,7 @@ loudspeaker setup or headphones.
 -----
 
 .. figure:: /images/spatial/ambisonics/ambi-workflow.png
-  :width: 80%
+  :width: 50%
   :figwidth: 100%
   :align: center
 

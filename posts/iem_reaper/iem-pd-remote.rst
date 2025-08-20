@@ -50,10 +50,9 @@ The following PD patch uses no additional libraries and should work as it is. Bo
 The OSC path is defined in the ``oscformat`` object. It can be changed, if other paramters should be controlled.
 
 .. figure:: /images/spatial/pd_to_iem.png
-  :width: 50%
+  :width: 30%
   :figwidth: 100%
   :align: center
-
 
 NOTE: 
 -----
