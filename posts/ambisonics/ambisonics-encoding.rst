@@ -123,22 +123,22 @@ For :math:`N` sources:
    
 
 
------
+.. -----
 
-Real SN3D Spherical Harmonics (Definition)
-==========================================
+.. Real SN3D Spherical Harmonics (Definition)
+.. ==========================================
 
-With associated Legendre functions :math:`P_\ell^m(\cdot)` and SN3D factor
-:math:`N_{\ell m}=\sqrt{\dfrac{(2-\delta_{m0})(\ell-m)!}{(\ell+m)!}}`:
+.. With associated Legendre functions :math:`P_\ell^m(\cdot)` and SN3D factor
+.. :math:`N_{\ell m}=\sqrt{\dfrac{(2-\delta_{m0})(\ell-m)!}{(\ell+m)!}}`:
 
-.. math::
+.. .. math::
 
-   Y_\ell^{m}(\theta,\varphi)=
-   \begin{cases}
-   N_{\ell 0}\,P_\ell(\sin\theta), & m=0,\\[6pt]
-   N_{\ell m}\,P_\ell^{m}(\sin\theta)\,\sqrt{2}\,\cos(m\varphi), & m>0,\\[6pt]
-   N_{\ell |m|}\,P_\ell^{|m|}(\sin\theta)\,\sqrt{2}\,\sin(|m|\varphi), & m<0.
-   \end{cases}
+..    Y_\ell^{m}(\theta,\varphi)=
+..    \begin{cases}
+..    N_{\ell 0}\,P_\ell(\sin\theta), & m=0,\\[6pt]
+..    N_{\ell m}\,P_\ell^{m}(\sin\theta)\,\sqrt{2}\,\cos(m\varphi), & m>0,\\[6pt]
+..    N_{\ell |m|}\,P_\ell^{|m|}(\sin\theta)\,\sqrt{2}\,\sin(|m|\varphi), & m<0.
+..    \end{cases}
    
  
  

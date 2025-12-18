@@ -80,8 +80,8 @@ The main task is to **design and implement the Python part**:
 
 .. code-block:: python
 
-    /head/pos   [x, y]
-    /hand/left/pos  [x, y]
+    /head/pos [x, y]
+    /hand/left/pos [x, y]
     /hand/right/pos [x, y]
 
 
@@ -119,3 +119,4 @@ Advanced Mode
 =============
 
 Advanced students can use any audio software (PD, SuperCollider, Max, ...) and arbitrary tracking solutions to control spatial audio with gestures and movement.
+YOLO is an alternatve for detecting multiple objects and persons: https://docs.ultralytics.com/

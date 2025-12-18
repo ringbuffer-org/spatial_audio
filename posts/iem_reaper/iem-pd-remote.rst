@@ -54,6 +54,24 @@ The OSC path is defined in the ``oscformat`` object. It can be changed, if other
   :figwidth: 100%
   :align: center
 
+-----
+
+
+Increasing the Resolution
+==========================
+
+
+Even with increased temporal resolution, phase wrapping can become problem:
+
+.. figure:: /images/spatial/automation_lanes.png
+  :width: 90%
+  :figwidth: 100%
+  :align: center
+
+More info from the Reaper Blog:
+https://reaper.blog/2022/05/automation-transitions/?utm_source=chatgpt.com
+
+
 NOTE: 
 -----
 
